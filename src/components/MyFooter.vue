@@ -23,17 +23,17 @@ import LogoLink from '../components/LogoLink.vue';
 <script setup lang="ts">
 
 interface Emits {
-    (event: 'envFileSelected', url: String): void;
-    (event: 'modelFileSelected', url: String): void;
+    (event: 'envFileSelected', url: string): void;
+    (event: 'modelFileSelected', url: string): void;
 }
 
 const emit = defineEmits<Emits>();
 
-const selectEnvironmentFile = (url: string) => {
+const selectEnvironmentFile = (url: string) : void => {
   emit("envFileSelected", url);
 }
 
-const selectModelFile = (url: string) => {
+const selectModelFile = (url: string) : void => {
   emit("modelFileSelected", url);
 }
 </script>

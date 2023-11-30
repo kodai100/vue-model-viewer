@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 interface Emits {
-    (event: 'fileSelected', url: String): void;
+    (event: 'fileSelected', url: string): void;
 }
 
 const emit = defineEmits<Emits>();
